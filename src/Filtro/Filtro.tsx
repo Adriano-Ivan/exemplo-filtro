@@ -105,23 +105,23 @@ const dataBebida =[
        ]
      },
      {
-        id:'root2',
+        id:'root3',
         name:'Artesanais',
         children:[
           {
-            id:'6',
+            id:'10',
             name:'Cerveja texana'
           },
           {
-            id:'7',
+            id:'11',
             name:'Essência de ervas doces da Islândia',
             children: [
               {
-                id:'8',
+                id:'12',
                 name:'extremo norte'
               },
               {
-                id:'8',
+                id:'13',
                 name:'extremo sul'
               },
             ]
@@ -136,8 +136,8 @@ const Filtro = () =>{
         <section className={'container-area-Filtro'} >
             <h2 className='title-container-Filtro'>Filtro</h2>
             <div className={'area-Filtro'}>
-            <TreeStructure classNamePersonalizada={'comida-Filtro'} dataTree={dataComida}></TreeStructure>
-            <TreeStructure classNamePersonalizada={'bebida-Filtro'} dataTree={dataBebida}></TreeStructure>
+            <TreeStructure titleFiltro='Comidas' classNamePersonalizada={'comida-Filtro'} dataTree={dataComida}></TreeStructure>
+            <TreeStructure titleFiltro='Bebidas' classNamePersonalizada={'bebida-Filtro'} dataTree={dataBebida}></TreeStructure>
             </div>
             <div className={'container-button-filtro'}>
               <Button variant="contained" className={'botao-filtrar'} >Filtrar</Button>

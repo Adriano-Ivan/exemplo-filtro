@@ -109,12 +109,14 @@ const TreeStructure = (props:any) =>{
     
     return (
       <>
+       
         <TreeView
         className={props.classNamePersonalizada}
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpanded={["0", "3", "4"]}
           defaultExpandIcon={<ChevronRightIcon />}
         >
+         <h3 className={'titulo-entidades-filtro'}>{props.titleFiltro}</h3>
           {
             treeData.map((elements:any)=>(
               RenderTreeWithCheckboxes(elements)
